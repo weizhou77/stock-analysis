@@ -2,17 +2,19 @@
 
 ## Analysis
 
-### Over View of the Project
+### OverView  and Purpose of the Project
 
-The purpose of this project is about Steve is helping his parents doing some investments on green energy stock, the Daqo New Energy Corporation stock in particular. Our goal is to decide whether the Daqo New Energy Corporation stock is a good green energy stock to invest by analyzing two groups of green energy data for year 2017 and 2018. We are going to use Visual Basic for Applications programming language to do this project. VBA interacts with excel, it can read and write to cells and worksheets, make calculations and use complex logic to perform analysis.
+We have created a VBS code to analyze the green energy stock market for year 2017 and 2018. The purpose of this project is to refactor the code we have created for the project.
+
 
 
 
 ### Results about the Output
 
-There are two worksheets in the datasets, one worksheet shows 2017 stock market and the other shows 2018. Each worksheet has 12 green energy stocks including the Daqo New Energy Corporation stock (DQ). We use VBA to make calculations for the total daily volume and yearly return for each stocks. On the 2017 output, it shows that it is a good year for green energy stocks. Almost all 12 green energy stocks have positive yearly return except the TEBP stock. DQ almost has 200% yearly return. however, when we look at the 2018 output, DQ has negative yearly return that it is -62.6%. In 2018, there are only two green energy stocks have positive yearly return which are ENPH (81.9%) and RUN (84%); not just positive yearly return, their total daily volumes are almost doubled as in 2017. So we will suggest Steve to invest in ENPH and RUN instead of DQ for their parents.
+When we run the analysis, the program will ask you to input the year you want to analyze. After entering the year you want to analyze, the program will output all the Total Daily Volume and Yearly Return for each stock. Also Excel will pop up a message box telling you how much time Excel has used to execute the code. 
+
 
 
 ### Summary about the Refactering Code
 
-The refactoring code allows us to analyze and show analysis data output in one worksheet. However, it can only show one analysis data output for one year at a time so we can not compare both years side by side. 
+In general, the refactored code should be more efficient and easier to understand with comments and organized structure. The disadvantage for refactoring code is that it takes longer time to restructure the code and it may cause some bug such as typo during the refactoring process. Comparing the refactored VBS code to the original from the exercise, we have created an extra array variable called tickersIndex which will allow us to modify our code easily in the future if we need to change the tickers datas. Also, we added more comments to the code which will make the code more understandable. Since our original VBS code for the project is not very long, we do not see a significant execution time improvement from the refactored code. 
